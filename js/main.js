@@ -18,7 +18,7 @@ const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: r
 
 /**
  * Crea un elemento DOM de forma segura (usa textContent, nunca innerHTML).
- * attrs: { class, text, dataset:{}, ...atributos }  children: nodos o textos.
+ * attrs: { class, text, dataset:{}, ...atributos }   children: nodos o textos.
  */
 function h(tag, attrs = {}, ...children) {
   const el = document.createElement(tag);
@@ -105,7 +105,7 @@ function renderCollectionGrid() {
   grid.replaceChildren(fragment);
 }
 
-/** Construye una vista (frontal o espalda) del modal con zoom al pasar el cursor. */
+/** Construye una vista (frontal, espalda o plus) del modal con zoom al pasar el cursor. */
 function buildModalView(path, caption, look) {
   const media = h('div', { class: 'view-media' },
     createImage(path, `${caption} view of ${look.name}`, `${look.name} — ${caption.toLowerCase()} view pending`)
@@ -119,7 +119,7 @@ function buildModalView(path, caption, look) {
   return h('figure', { class: 'view' }, media, h('figcaption', { text: caption }));
 }
 
-/** Abre el modal con FRONTAL y ESPALDA leyendo los datos de COLLECTION_DATA. */
+/** Abre el modal con FRONTAL, ESPALDA y VISTAS PLUS leyendo los datos de COLLECTION_DATA. */
 function openLookModal(lookId) {
   const look = COLLECTION_DATA.looks.find((item) => item.id === lookId);
   if (!look) return;
@@ -128,10 +128,18 @@ function openLookModal(lookId) {
   $('#modalTitle').textContent = look.name;
   $('#modalCategory').textContent = look.category;
   $('#modalDesc').textContent = look.description;
-  $('#modalViews').replaceChildren(
+
+  const views = [
     buildModalView(look.images.front, 'Front', look),
     buildModalView(look.images.back, 'Back', look)
-  );
+  ];
+
+  if (look.images.plus) {
+    if (look.images.plus.front) views.push(buildModalView(look.images.plus.front, 'Plus Front', look));
+    if (look.images.plus.back) views.push(buildModalView(look.images.plus.back, 'Plus Back', look));
+  }
+
+  $('#modalViews').replaceChildren(...views);
   $('#modalTechBtn').dataset.lookId = look.id;
 
   document.body.style.overflow = 'hidden';
@@ -155,7 +163,7 @@ function initModal() {
 }
 
 /* ==========================================================================
-   2. Tech Packs (tabs + ficha técnica)
+   2. Tech Packs (tabs + ficha técnica + selector de medidas + PDF)
    ========================================================================== */
 
 const TECH_FIELDS = ['FABRIC', 'LINING', 'TRIMS', 'STITCH', 'FINISHING'];
@@ -216,7 +224,41 @@ function buildTechFigure(look) {
   );
 }
 
-/** Ficha técnica con <table> semántica: FABRIC | LINING | TRIMS | STITCH | FINISHING | MEASUREMENTS. */
+/** Construye el selector interactivo de medidas (sizeChart XS a XXL). */
+function buildInteractiveMeasurements(sizeChart) {
+  if (!sizeChart) return h('span', { class: 'tbc', text: 'To be confirmed' });
+
+  const sizes = Object.keys(sizeChart);
+  const detailsContainer = h('div', { class: 'size-details-container' });
+
+  const updateDetails = (sizeKey) => {
+    const data = sizeChart[sizeKey];
+    if (!data) return;
+    const dl = h('dl', { class: 'measure-list' },
+      h('div', {}, h('dt', { text: 'Bust' }), h('dd', { text: `${data.bust} cm` })),
+      h('div', {}, h('dt', { text: 'Waist' }), h('dd', { text: `${data.waist} cm` })),
+      h('div', {}, h('dt', { text: 'Hip' }), h('dd', { text: `${data.hip} cm` })),
+      h('div', {}, h('dt', { text: 'Length' }), h('dd', { text: `${data.length} cm` }))
+    );
+    detailsContainer.replaceChildren(dl);
+  };
+
+  const select = h('select', { class: 'size-select', 'aria-label': 'Select Size' });
+  sizes.forEach((s) => select.append(h('option', { value: s, text: `Size ${s}` })));
+
+  select.addEventListener('change', (e) => updateDetails(e.target.value));
+  updateDetails(sizes[0]);
+
+  return h('div', { class: 'interactive-measurements' },
+    h('div', { class: 'size-picker-row' },
+      h('label', { text: 'Select Size: ' }),
+      select
+    ),
+    detailsContainer
+  );
+}
+
+/** Ficha técnica con <table> semántica + Medidas Interactivas + Botón PDF. */
 function buildTechSheet(look) {
   const { title } = splitLookName(look.name);
   const tp = look.techPack;
@@ -236,12 +278,14 @@ function buildTechSheet(look) {
     h('tr', {}, h('th', { scope: 'row', text: field }), h('td', {}, techValue(tp[field])))
   );
 
-  const m = tp.MEASUREMENTS || {};
-  const measures = h('dl', { class: 'measure-list' },
-    ...[['Bust', m.bust], ['Waist', m.waist], ['Length', m.length]]
-      .map(([label, value]) => h('div', {}, h('dt', { text: label }), h('dd', {}, techValue(value))))
-  );
-  rows.push(h('tr', {}, h('th', { scope: 'row', text: 'MEASUREMENTS' }), h('td', {}, measures)));
+  const measurementsContent = tp.MEASUREMENTS && tp.MEASUREMENTS.sizeChart
+    ? buildInteractiveMeasurements(tp.MEASUREMENTS.sizeChart)
+    : h('dl', { class: 'measure-list' },
+        ...[['Bust', tp.MEASUREMENTS?.bust], ['Waist', tp.MEASUREMENTS?.waist], ['Length', tp.MEASUREMENTS?.length]]
+          .map(([label, value]) => h('div', {}, h('dt', { text: label }), h('dd', {}, techValue(value))))
+      );
+
+  rows.push(h('tr', {}, h('th', { scope: 'row', text: 'MEASUREMENTS' }), h('td', {}, measurementsContent)));
 
   const table = h('table', { class: 'spec' },
     h('caption', { text: `Technical specification — ${splitLookName(look.name).code}` }),
@@ -252,6 +296,17 @@ function buildTechSheet(look) {
   const viewBtn = h('button', { class: 'btn btn-small', type: 'button', text: 'View front and back' });
   viewBtn.addEventListener('click', () => openLookModal(look.id));
   actions.append(viewBtn);
+
+  if (tp.pdfUrl) {
+    const pdfBtn = h('a', {
+      class: 'btn btn-small btn-accent',
+      href: encodePath(tp.pdfUrl),
+      target: '_blank',
+      download: '',
+      text: '📄 Download Tech Pack (PDF)'
+    });
+    actions.append(pdfBtn);
+  }
 
   return h('div', { class: 'sheet' }, header, meta, table, actions);
 }
@@ -401,8 +456,7 @@ function auditTechPacks() {
   const pending = [];
   COLLECTION_DATA.looks.forEach((look) => {
     const tp = look.techPack;
-    const missing = [...TECH_FIELDS.filter((f) => !String(tp[f] || '').trim()),
-      ...['bust', 'waist', 'length'].filter((k) => !String((tp.MEASUREMENTS || {})[k] || '').trim()).map((k) => `MEASUREMENTS.${k}`)];
+    const missing = [...TECH_FIELDS.filter((f) => !String(tp[f] || '').trim())];
     if (missing.length) pending.push(`${look.id}: ${missing.join(', ')}`);
   });
   if (pending.length) console.info(`[DeModaKissOdel] Tech pack fields still empty:\n${pending.join('\n')}`);
