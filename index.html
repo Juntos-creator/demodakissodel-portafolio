@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeModaKissOdel | SHEIN X Designer Portfolio</title>
+  <meta name="description" content="DeModaKissOdel by Odelkis Dominguez: an eleven-look Autumn–Winter 2026 collection with tech packs, textiles and illustrations, prepared for the SHEIN X Designer Program.">
+  <meta name="author" content="Odelkis Dominguez">
+  <meta name="theme-color" content="#FDFBF7">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DeModaKissOdel | SHEIN X Designer Portfolio">
+  <meta property="og:description" content="Eleven looks, each with its tech pack, textile and illustration. Designed by Odelkis Dominguez.">
+  <meta property="og:locale" content="en_US">
+  <!-- Al publicar, añade aquí og:image con la URL ABSOLUTA de una foto (las redes no leen rutas relativas):
+       <meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/MIS_DISENOS/LOOK%201/LOOK%201%20DISENO.jpeg"> -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts (única dependencia externa) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- CSS crítico inline: tokens + cabecera + hero (espejo de css/style.css, para el primer pintado) -->
+  <style>
+    :root{--bg:#FDFBF7;--text:#121212;--accent:#D4AF37;--accent-2:#C5A059;--line:#E5E5E5;--white:#FFFFFF;--font-serif:'Cormorant Garamond',serif;--font-sans:'Montserrat',sans-serif;--space-xl:clamp(60px,8vw,120px)}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-sans);font-weight:300;line-height:1.7}
+    .site-header{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+    .hero{min-height:100svh;display:grid}
+  </style>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#collection">Skip to collection</a>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="DeModaKissOdel, back to top">DeModaKissOdel</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="#collection">Collection</a>
+        <a href="#techpacks">Tech Packs</a>
+        <a href="#archive">Illustrations &amp; Textiles</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <h1 id="heroTitle">
+          <span class="hero-brand">DeModaKissOdel</span>
+          <span class="hero-program">— SHEIN X Collection</span>
+        </h1>
+        <p class="hero-sub">Eleven looks for Autumn–Winter 2026 in burgundy, camel and gold. Every look comes with its tech pack, its textile and its illustration.</p>
+        <a class="btn" href="#collection" id="exploreBtn">Explore Collection</a>
+      </div>
+      <div class="hero-media" id="heroMedia">
+        <!-- Hero: eager + fetchpriority porque es la imagen LCP (única excepción a loading="lazy") -->
+        <img id="heroImg"
+             src="./MIS_DISENOS/LOOK%201/LOOK%201%20DISENO.jpeg"
+             alt="Look 01, Desert Rose: a model walks the runway in a beige flared jumpsuit with an oversized rose at the shoulder"
+             width="1143" height="1600" fetchpriority="high" decoding="async">
+      </div>
+    </section>
+
+    <section class="section" id="collection" aria-labelledby="collectionTitle">
+      <div class="section-head">
+        <h2 id="collectionTitle">Collection</h2>
+        <p>Select a look to see its front and back.</p>
+      </div>
+      <div class="masonry" id="collectionGrid"></div>
+    </section>
+
+    <section class="section" id="techpacks" aria-labelledby="techTitle">
+      <div class="section-head">
+        <h2 id="techTitle">Tech Packs</h2>
+        <p>Materials, trims, construction and measurements for each look.</p>
+      </div>
+      <div class="tabs" id="techTabs" role="tablist" aria-label="Select a look"></div>
+      <div class="tech-panel" id="techPanel" role="tabpanel" tabindex="0"></div>
+    </section>
+
+    <section class="section" id="archive" aria-labelledby="archiveTitle">
+      <div class="section-head">
+        <h2 id="archiveTitle">Illustrations &amp; Textiles</h2>
+        <p>The watercolour for each look and the main fabric it is cut from.</p>
+      </div>
+      <h3 class="sub-title">Illustrations</h3>
+      <div class="gallery" id="illustrationGrid"></div>
+      <h3 class="sub-title">Textiles</h3>
+      <div class="gallery textiles" id="textileGrid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <p class="footer-credit">Designed by Odelkis Dominguez | DeModaKissOdel © 2026</p>
+    <p class="footer-links" id="footerLinks"></p>
+  </footer>
+
+  <!-- Modal del look (frontal + espalda) -->
+  <dialog class="modal" id="lookModal" aria-labelledby="modalTitle" aria-label="Look detail">
+    <div class="modal-body">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close look detail">&times;</button>
+      <div class="modal-head">
+        <h2 id="modalTitle"></h2>
+        <p class="modal-category" id="modalCategory"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+      </div>
+      <div class="modal-views" id="modalViews"></div>
+      <button class="btn btn-small" id="modalTechBtn" type="button">View tech pack</button>
+    </div>
+  </dialog>
+
+  <script src="./js/data.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
