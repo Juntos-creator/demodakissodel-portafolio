@@ -31,17 +31,17 @@ const COLLECTION_DATA = {
       },
       illustration: "./MIS_DISENOS/LOOK 1/LOOK 1 ACUARELA.jpeg",
       textile: {
-        name: "Stretch Wool Crepe Beige",
-        composition: "98% Wool, 2% Elastane",
+        name: "Stretch Wool Crepe Beige & Secondary Accent Fabrics",
+        composition: "Main: 98% Wool, 2% Elastane | Panels: Bonded Faux Suede Dark Brown (100% Polyester) | Rose Appliqué: Silk Taffeta Organza Beige (100% Silk) | Lining: Power Mesh Nude (80% Nylon, 20% Spandex)",
         image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_1_Stretch_Wool_Crepe_Beige_Main.jpeg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_01_TechPack.pdf",
-        FABRIC: "Stretch Wool Crepe Beige (main) · Bonded Faux Suede Dark Brown (panels) · Silk Taffeta Organza Beige (rose) · Power Mesh Nude (lining)",
-        LINING: "Power Mesh, nude",
-        TRIMS: "Sculpted rose appliqué, silk taffeta organza, beige (shoulder)",
+        FABRIC: "Stretch Wool Crepe Beige (main fabric, 98% Wool / 2% Elastane) · Bonded Faux Suede Dark Brown (side panels, 100% Polyester) · Silk Taffeta Organza Beige (sculpted shoulder rose, 100% Silk) · Power Mesh Nude (internal lining, 80% Nylon / 20% Spandex)",
+        LINING: "Power Mesh Nude (80% Nylon / 20% Spandex) for structural support and breathability",
+        TRIMS: "Sculpted oversized rose appliqué in beige silk taffeta organza at left shoulder; concealed invisible back zipper",
         STITCH: "Standard straight stitch (3mm) with clean edge-stitching along suede panels",
-        FINISHING: "Invisible hem at flared pant bottoms, overlocked internal seam finishing, and concealed back zipper",
+        FINISHING: "Invisible hem at flared pant bottoms, overlocked internal seam finishing, and concealed back zipper closure",
         MEASUREMENTS: {
           unit: "cm",
           sizeChart: {
@@ -71,17 +71,17 @@ const COLLECTION_DATA = {
       },
       illustration: "./MIS_DISENOS/LOOK 2/LOOK 2 Acuarela.jpeg",
       textile: {
-        name: "Stretch Velvet Burgundy",
-        composition: "90% Polyester 10% Spandex, 300 GSM",
+        name: "Stretch Velvet Burgundy & Crystal Organza Accent",
+        composition: "Main: 90% Polyester, 10% Spandex (300 GSM) | Ruffles: Crystal Organza Olive Green (100% Polyester) | Lining: Power Mesh Nude",
         image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_1_Stretch_Velvet_Burgundy_90Poly_10Spandex_300GSM.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_02_TechPack.pdf",
-        FABRIC: "Stretch Velvet Burgundy (90% Polyester 10% Spandex, 300 GSM) · Crystal Organza Olive Green (100% Polyester)",
-        LINING: "Power Mesh, nude",
-        TRIMS: "Crystal organza ruffles",
-        STITCH: "Stretch stitch & reinforced halter seams",
-        FINISHING: "Overlock internal finishing and invisible zipper",
+        FABRIC: "Stretch Velvet Burgundy (main dress, 90% Polyester / 10% Spandex, 300 GSM) · Crystal Organza Olive Green (statement sleeve ruffles, 100% Polyester)",
+        LINING: "Power Mesh Nude (80% Nylon / 20% Spandex) for body contouring and comfort",
+        TRIMS: "Voluminous layered ruffles in olive green crystal organza at the sleeves; invisible back zipper closure",
+        STITCH: "Flexible stretch stitch on velvet body & reinforced halter neck seams",
+        FINISHING: "Overlocked internal seam finishing, rolled hem edges on organza ruffles, and concealed back zipper",
         MEASUREMENTS: {
           unit: "cm",
           sizeChart: {
