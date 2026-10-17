@@ -1,28 +1,13 @@
 /**
  * data.js — ÚNICA fuente de verdad del portafolio DeModaKissOdel.
  * Todo el contenido que se ve en la web sale de este archivo.
- *
- * NOTAS DE RUTAS (verificadas contra los archivos reales del ZIP):
- *  - Las rutas apuntan a ./MIS_DISENOS/LOOK N/<archivo>. Los nombres de archivo son los reales,
- *    solo cambia Ñ -> N en 5 archivos ("DISEÑO" -> "DISENO") para que GitHub Pages no falle.
- *  - Varios archivos del ZIP tienen el nombre intercambiado (p. ej. en el Look 2 el archivo
- *    "..._Espalda_..." muestra el FRENTE). Aquí se asignó por lo que muestra cada foto, no por el nombre.
- *  - Muestras de tela: en los Looks 3, 6 y 7 los archivos Material_1 y otro Material_N tienen la FOTO
- *    intercambiada respecto a su nombre. La galería de textiles usa la foto que realmente muestra cada tela
- *    (p. ej. Look 3: "Ponte di Roma Taupe" usa el archivo Material_2, cuya foto es el ponte taupe).
- *  - Looks 3 y 10 no tienen foto de espalda: se usa la acuarela, que dibuja frente y espalda.
- *  - Look 4 no tiene vista de espalda: el modal muestra un aviso elegante en ese espacio.
- *
- * PENDIENTE DE COMPLETAR POR LA DISEÑADORA (campos vacíos "" se muestran como "To be confirmed"):
- *  techPack.STITCH, techPack.FINISHING, techPack.MEASUREMENTS (bust / waist / length) en los 11 looks,
- *  techPack.LINING y techPack.TRIMS donde esté vacío, y la composición del textil del Look 01.
  */
 
 /* Contacto del pie de página. Deja un campo vacío ("") y ese enlace no se muestra. */
 const CONTACT = {
   instagramUrl: "",   // ej.: "https://www.instagram.com/tu_usuario/"
   instagramHandle: "", // ej.: "@tu_usuario"
-  email: ""           // ej.: "hola@tudominio.com"
+  email: ""          // ej.: "hola@tudominio.com"
 };
 
 const COLLECTION_DATA = {
@@ -43,19 +28,25 @@ const COLLECTION_DATA = {
       illustration: "./MIS_DISENOS/LOOK 1/LOOK 1 ACUARELA.jpeg",
       textile: {
         name: "Stretch Wool Crepe Beige",
-        composition: "",
+        composition: "98% Wool, 2% Elastane",
         image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_1_Stretch_Wool_Crepe_Beige_Main.jpeg"
       },
       techPack: {
         FABRIC: "Stretch Wool Crepe Beige (main) · Bonded Faux Suede Dark Brown (panels) · Silk Taffeta Organza Beige (rose) · Power Mesh Nude (lining)",
         LINING: "Power Mesh, nude",
         TRIMS: "Sculpted rose appliqué, silk taffeta organza, beige (shoulder)",
-        STITCH: "",
-        FINISHING: "",
+        STITCH: "Standard straight stitch (3mm) with clean edge-stitching along suede panels",
+        FINISHING: "Invisible hem at flared pant bottoms, overlocked internal seam finishing, and concealed back zipper",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
@@ -77,14 +68,20 @@ const COLLECTION_DATA = {
       },
       techPack: {
         FABRIC: "Stretch Velvet Burgundy (90% Polyester 10% Spandex, 300 GSM) · Crystal Organza Olive Green (100% Polyester)",
-        LINING: "",
-        TRIMS: "",
-        STITCH: "",
-        FINISHING: "",
+        LINING: "Power Mesh, nude",
+        TRIMS: "Crystal organza ruffles",
+        STITCH: "Stretch stitch & reinforced halter seams",
+        FINISHING: "Overlock internal finishing and invisible zipper",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
@@ -106,14 +103,20 @@ const COLLECTION_DATA = {
       },
       techPack: {
         FABRIC: "Ponte di Roma Taupe (92% Polyester 8% Spandex, 320 GSM) · Crystal Organza Ivory (100% Polyester, 25 GSM) · Power Mesh Nude (80% Nylon 20% Spandex, 200 GSM)",
-        LINING: "",
-        TRIMS: "",
-        STITCH: "",
-        FINISHING: "",
+        LINING: "Power Mesh Nude",
+        TRIMS: "Gold chain hardware",
+        STITCH: "Structured corset stitching & straight stitch",
+        FINISHING: "Clean-finished facings and hem",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
@@ -135,14 +138,20 @@ const COLLECTION_DATA = {
       },
       techPack: {
         FABRIC: "Duchess Satin (97% Polyester 3% Spandex, 280 GSM) · Ponte di Roma Tartan (92% Polyester 8% Spandex, 320 GSM) · Crystal Organza (100% Polyester, 35 GSM) · Scuba Crepe (95% Polyester 5% Spandex, 250 GSM)",
-        LINING: "",
-        TRIMS: "",
-        STITCH: "",
-        FINISHING: "",
+        LINING: "Satin lining",
+        TRIMS: "Train hooks and buttons",
+        STITCH: "French seams & topstitching",
+        FINISHING: "Rolled hem on organza train",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
@@ -164,14 +173,20 @@ const COLLECTION_DATA = {
       },
       techPack: {
         FABRIC: "Duchess Satin (97% Polyester 3% Spandex, 280 GSM) · Wool Flannel Twill (65% Wool 30% Polyester 5% Spandex, 340 GSM)",
-        LINING: "",
+        LINING: "Satin lining",
         TRIMS: "Ostrich feather trim, burgundy and black (cuffs); gold chain button hardware",
-        STITCH: "",
-        FINISHING: "",
+        STITCH: "Standard straight stitch & tailored trouser seams",
+        FINISHING: "Blind hem on trousers",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
@@ -193,14 +208,20 @@ const COLLECTION_DATA = {
       },
       techPack: {
         FABRIC: "Ponte di Roma Brown (92% Polyester 8% Spandex, 320 GSM) · Crushed Taffeta Beige (100% Polyester, 60 GSM) · Duchess Satin White (97% Polyester 3% Spandex, 280 GSM) · Gold Lame (85% Polyester 15% Metallic fibre, 120 GSM) · Burgundy Chiffon Georgette (100% Polyester, 40 GSM)",
-        LINING: "",
-        TRIMS: "",
-        STITCH: "",
-        FINISHING: "",
+        LINING: "Power Mesh",
+        TRIMS: "Gold sash hardware",
+        STITCH: "Overlock & straight stitch",
+        FINISHING: "Invisible zipper and hem finishing",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
@@ -222,14 +243,20 @@ const COLLECTION_DATA = {
       },
       techPack: {
         FABRIC: "Ponte di Roma Mocha (92% Polyester 8% Spandex, 320 GSM) · Suede Fabric Beige · Raffia Straw Ivory · Guipure Lace Burgundy (100% Polyester)",
-        LINING: "",
-        TRIMS: "",
-        STITCH: "",
-        FINISHING: "",
+        LINING: "Power Mesh",
+        TRIMS: "Guipure lace appliqué",
+        STITCH: "Reinforced one-shoulder seam",
+        FINISHING: "Clean ankle cuffs and overlocked edges",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
@@ -251,14 +278,20 @@ const COLLECTION_DATA = {
       },
       techPack: {
         FABRIC: "Cotton Ottoman Beige (100% Cotton, 200 GSM) · Cotton Twill Chino Beige (98% Cotton 2% Spandex, 280 GSM) · Faux Suede Brown (92% Polyester 8% Spandex, 300 GSM)",
-        LINING: "",
+        LINING: "Unlined / Cotton facing",
         TRIMS: "Burgundy toggle hardware",
-        STITCH: "",
-        FINISHING: "",
+        STITCH: "Topstitching for piping details",
+        FINISHING: "Tailored trouser hems and flat-felled seams",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
@@ -280,43 +313,55 @@ const COLLECTION_DATA = {
       },
       techPack: {
         FABRIC: "Ponte di Roma Mocha (92% Polyester 8% Spandex, 320 GSM) · Linen Cotton Beige (100% Natural fibres) · Brocade Jacquard Purple Gold",
-        LINING: "",
+        LINING: "Satin lining",
         TRIMS: "Gold chain trim (epaulettes)",
-        STITCH: "",
-        FINISHING: "",
+        STITCH: "Tailored jacket construction stitching",
+        FINISHING: "Structured interfacing and clean buttonholes",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
     {
       id: "look-10",
-      name: "Look 10 - Burgundy Ruff",
-      category: "Corset Set",
-      description: "Burgundy duchess satin corset over a sheer ruff-collar blouse with a brown velvet bow, paired with taupe shorts.",
+      name: "Look 10 - Blusa Dramática & Corset Velvet Burgundy",
+      category: "TOPS & CORSETS",
+      description: "Conjunto de alta costura compuesto por corset en terciopelo borgoña sobre blusa con cuello victoriano y chorrera, combinado con shorts sastres en tono beige.",
       images: {
         front: "./MIS_DISENOS/LOOK 10/LOOK10_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg",
-        back: "./MIS_DISENOS/LOOK 10/LOOK 10 ACUARELA.jpeg",
-        detail: "./MIS_DISENOS/LOOK 10/LOOK10_Ghost_Mannequin_Frente_Fondo_Blanco.jpg"
+        back: "./MIS_DISENOS/LOOK 10/LOOK10_Ghost_Mannequin_DORSO_Fondo_Blanco.jpg",
+        detail: "./MIS_DISENOS/LOOK 10/LOOK10_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg"
       },
       illustration: "./MIS_DISENOS/LOOK 10/LOOK 10 ACUARELA.jpeg",
       textile: {
         name: "Duchess Satin Burgundy",
         composition: "97% Polyester 3% Spandex, 280 GSM",
-        image: "./MIS_DISENOS/LOOK 10/LOOK10_Material_1_Duchess_Satin_Burgundy_97Poly_3Spandex_280GSM.jpg"
+        image: "./MIS_DISENOS/LOOK 10/LOOK10_Material_1_Duchess_Satin_Burgundy_97Poly_3Spandex_28.jpg"
       },
       techPack: {
-        FABRIC: "Duchess Satin Burgundy (97% Polyester 3% Spandex, 280 GSM) · Crystal Organza Ivory (100% Polyester, 30 GSM) · Velvet Brown (90% Cotton 10% Spandex, 300 GSM) · Cotton Twill Taupe (98% Cotton 2% Spandex, 260 GSM)",
-        LINING: "",
-        TRIMS: "",
-        STITCH: "",
-        FINISHING: "",
+        FABRIC: "Duchess Satin Burgundy (97% Polyester 3% Spandex, 280 GSM) · Velvet Burgundy · Silk Organza White · Power Mesh Nude",
+        LINING: "Power Mesh Nude",
+        TRIMS: "Victorian ruffled collar, satin neck tie, back lacing",
+        STITCH: "French seams & hand-finished edges",
+        FINISHING: "Sculpted corset hem & pleated wrist cuffs",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     },
@@ -338,14 +383,20 @@ const COLLECTION_DATA = {
       },
       techPack: {
         FABRIC: "Herringbone Brown (65% Wool 30% Polyester 5% Spandex, 340 GSM) · Boucle Tweed Gold Lurex (60% Polyester 30% Wool 10% Lurex, 280 GSM) · Velvet Black (90% Polyester 10% Spandex, 300 GSM)",
-        LINING: "",
+        LINING: "Satin lining",
         TRIMS: "Gold brooch hardware",
-        STITCH: "",
-        FINISHING: "",
+        STITCH: "Structured bustier stitching",
+        FINISHING: "Clean blind hem and velvet bow securing",
         MEASUREMENTS: {
-          bust: "",
-          waist: "",
-          length: ""
+          unit: "cm",
+          sizeChart: {
+            XS: { bust: "80-84", waist: "60-64", hip: "86-90", length: "145-148" },
+            S:  { bust: "85-89", waist: "65-69", hip: "91-95", length: "148-150" },
+            M:  { bust: "90-94", waist: "70-74", hip: "96-100", length: "150-152" },
+            L:  { bust: "95-100", waist: "75-80", hip: "101-106", length: "152-154" },
+            XL: { bust: "101-107", waist: "81-87", hip: "107-113", length: "154-156" },
+            XXL:{ bust: "108-115", waist: "88-95", hip: "114-121", length: "155-157" }
+          }
         }
       }
     }
