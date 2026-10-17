@@ -44,7 +44,7 @@ const COLLECTION_DATA = {
         {
           name: "Bonded Faux Suede Dark Brown (Side Panels)",
           composition: "100% Polyester",
-          image: "./MIS_TEXTILES/LOOK 1/LOOK1_Material_2_Bonded_Faux_Suede_Dark_Brown_Side.jpeg"
+          image: "./MIS_TEXTILES/LOOK 1/LOOK1_Material_2_Bonded_Faux_Suede_Dark_Brown_Panels.jpeg"
         },
         {
           name: "Silk Taffeta Organza Beige (Rose Appliqué)",
@@ -54,7 +54,7 @@ const COLLECTION_DATA = {
         {
           name: "Power Mesh Nude (Lining)",
           composition: "80% Nylon, 20% Spandex",
-          image: "./MIS_TEXTILES/LOOK 1/LOOK1_Material_4_Power_Mesh_Nude_Lining_80Nylon_2.jpeg"
+          image: "./MIS_TEXTILES/LOOK 1/LOOK1_Material_4_Power_Mesh_Nude_Lining.jpeg"
         }
       ],
       techPack: {
@@ -152,10 +152,27 @@ const COLLECTION_DATA = {
       textile: {
         name: "Ponte di Roma Taupe",
         composition: "92% Polyester 8% Spandex, 320 GSM",
-        image: "./MIS_TEXTILES/LOOK 3/LOOK3_Material_2_Crystal_Organza_Ivory_100Poly_25GSM.jpg"
+        image: "./MIS_TEXTILES/LOOK 3/LOOK3_Material_1_Ponte_di_Roma_Taupe_92Poly_8Spandex_320GSM.jpg"
       },
+      textiles: [
+        {
+          name: "Ponte di Roma Taupe (Main Fabric)",
+          composition: "92% Polyester 8% Spandex, 320 GSM",
+          image: "./MIS_TEXTILES/LOOK 3/LOOK3_Material_1_Ponte_di_Roma_Taupe_92Poly_8Spandex_320GSM.jpg"
+        },
+        {
+          name: "Crystal Organza Ivory (Ruffles)",
+          composition: "100% Polyester",
+          image: "./MIS_TEXTILES/LOOK 3/LOOK3_Material_2_Crystal_Organza_Ivory_100Poly_25GSM.jpg"
+        },
+        {
+          name: "Power Mesh Nude (Lining)",
+          composition: "80% Nylon, 20% Spandex",
+          image: "./MIS_TEXTILES/LOOK 3/LOOK3_Material_3_Power_Mesh_Nude_80Nylon_20Spandex_200GSM.jpg"
+        }
+      ],
       techPack: {
-        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_03_TechPack.pdf",
+        pdfUrl: "./PDF_FICHAS_TECNICAS/PDF_LOOK_03_TechPack.pdf",
         FABRIC: "Ponte di Roma Taupe (92% Polyester 8% Spandex, 320 GSM) · Crystal Organza Ivory (100% Polyester, 25 GSM) · Power Mesh Nude (80% Nylon 20% Spandex, 200 GSM)",
         LINING: "Power Mesh Nude",
         TRIMS: "Gold chain hardware",
@@ -194,8 +211,30 @@ const COLLECTION_DATA = {
         composition: "97% Polyester 3% Spandex, 280 GSM",
         image: "./MIS_TEXTILES/LOOK 4/LOOK4_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
       },
+      textiles: [
+        {
+          name: "Duchess Satin Ivory (Main Blouse)",
+          composition: "97% Polyester, 3% Spandex",
+          image: "./MIS_TEXTILES/LOOK 4/LOOK4_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
+        },
+        {
+          name: "Ponte di Roma Tartan (Skirt)",
+          composition: "92% Polyester, 8% Spandex",
+          image: "./MIS_TEXTILES/LOOK 4/LOOK4_Material_2_Ponte_di_Roma_Tartan_92Poly_8Spandex_320GSM.jpg"
+        },
+        {
+          name: "Crystal Organza (Train)",
+          composition: "100% Polyester",
+          image: "./MIS_TEXTILES/LOOK 4/LOOK4_Material_3_Crystal_Organza_100Poly_35GSM.jpg"
+        },
+        {
+          name: "Scuba Crepe (Details)",
+          composition: "95% Polyester, 5% Spandex",
+          image: "./MIS_TEXTILES/LOOK 4/LOOK4_Material_4_Scuba_Crepe_95Poly_5Spandex_250GSM.jpg"
+        }
+      ],
       techPack: {
-        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_04_TechPack.pdf",
+        pdfUrl: "./PDF_FICHAS_TECNICAS/PDF_LOOK_04_TechPack.pdf",
         FABRIC: "Duchess Satin (97% Polyester 3% Spandex, 280 GSM) · Ponte di Roma Tartan (92% Polyester 8% Spandex, 320 GSM) · Crystal Organza (100% Polyester, 35 GSM) · Scuba Crepe (95% Polyester 5% Spandex, 250 GSM)",
         LINING: "Satin lining",
         TRIMS: "Train hooks and buttons",
@@ -234,8 +273,20 @@ const COLLECTION_DATA = {
         composition: "97% Polyester 3% Spandex, 280 GSM",
         image: "./MIS_TEXTILES/LOOK 5/LOOK5_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
       },
+      textiles: [
+        {
+          name: "Duchess Satin Ivory (Blouse)",
+          composition: "97% Polyester, 3% Spandex",
+          image: "./MIS_TEXTILES/LOOK 5/LOOK5_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
+        },
+        {
+          name: "Wool Flannel Twill Camel (Trousers)",
+          composition: "65% Wool, 30% Polyester, 5% Spandex",
+          image: "./MIS_TEXTILES/LOOK 5/LOOK5_Material_2_Wool_Flannel_Twill_65Wool_30Poly_5Spa.jpg"
+        }
+      ],
       techPack: {
-        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_05_TechPack.pdf",
+        pdfUrl: "./PDF_FICHAS_TECNICAS/PDF_LOOK_05_TechPack.pdf",
         FABRIC: "Duchess Satin (97% Polyester 3% Spandex, 280 GSM) · Wool Flannel Twill (65% Wool 30% Polyester 5% Spandex, 340 GSM)",
         LINING: "Satin lining",
         TRIMS: "Ostrich feather trim, burgundy and black (cuffs); gold chain button hardware",
@@ -275,7 +326,7 @@ const COLLECTION_DATA = {
         image: "./MIS_TEXTILES/LOOK 6/LOOK6_Material_3_Duchess_Satin_White_97Poly_3Spandex_280GSM.jpg"
       },
       techPack: {
-        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_06_TechPack.pdf",
+        pdfUrl: "./PDF_FICHAS_TECNICAS/PDF_LOOK_06_TechPack.pdf",
         FABRIC: "Ponte di Roma Brown (92% Polyester 8% Spandex, 320 GSM) · Crushed Taffeta Beige (100% Polyester, 60 GSM) · Duchess Satin White (97% Polyester 3% Spandex, 280 GSM) · Gold Lame (85% Polyester 15% Metallic fibre, 120 GSM) · Burgundy Chiffon Georgette (100% Polyester, 40 GSM)",
         LINING: "Power Mesh",
         TRIMS: "Gold sash hardware",
@@ -315,7 +366,7 @@ const COLLECTION_DATA = {
         image: "./MIS_TEXTILES/LOOK 7/LOOK7_Material_4_Guipure_Lace_Burgundy_100Poly.jpg"
       },
       techPack: {
-        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_07_TechPack.pdf",
+        pdfUrl: "./PDF_FICHAS_TECNICAS/PDF_LOOK_07_TechPack.pdf",
         FABRIC: "Ponte di Roma Mocha (92% Polyester 8% Spandex, 320 GSM) · Suede Fabric Beige · Raffia Straw Ivory · Guipure Lace Burgundy (100% Polyester)",
         LINING: "Power Mesh",
         TRIMS: "Guipure lace appliqué",
@@ -355,7 +406,7 @@ const COLLECTION_DATA = {
         image: "./MIS_TEXTILES/LOOK 8/LOOK8_Material_1_Cotton_Ottoman_Beige_100Cotton_200GSM.jpg"
       },
       techPack: {
-        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_08_TechPack.pdf",
+        pdfUrl: "./PDF_FICHAS_TECNICAS/PDF_LOOK_08_TechPack.pdf",
         FABRIC: "Cotton Ottoman Beige (100% Cotton, 200 GSM) · Cotton Twill Chino Beige (98% Cotton 2% Spandex, 280 GSM) · Faux Suede Brown (92% Polyester 8% Spandex, 300 GSM)",
         LINING: "Unlined / Cotton facing",
         TRIMS: "Burgundy toggle hardware",
@@ -395,7 +446,7 @@ const COLLECTION_DATA = {
         image: "./MIS_TEXTILES/LOOK 9/LOOK9_Material_1_Ponte_di_Roma_Mocha_92Poly_8Spandex_320GSM.jpg"
       },
       techPack: {
-        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_09_TechPack.pdf",
+        pdfUrl: "./PDF_FICHAS_TECNICAS/PDF_LOOK_09_TechPack.pdf",
         FABRIC: "Ponte di Roma Mocha (92% Polyester 8% Spandex, 320 GSM) · Linen Cotton Beige (100% Natural fibres) · Brocade Jacquard Purple Gold",
         LINING: "Satin lining",
         TRIMS: "Gold chain trim (epaulettes)",
@@ -435,7 +486,7 @@ const COLLECTION_DATA = {
         image: "./MIS_TEXTILES/LOOK 10/LOOK10_Material_1_Duchess_Satin_Burgundy_97Poly_3Spandex_28.jpg"
       },
       techPack: {
-        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_10_TechPack.pdf",
+        pdfUrl: "./PDF_FICHAS_TECNICAS/PDF_LOOK_10_TechPack.pdf",
         FABRIC: "Duchess Satin Burgundy (97% Polyester 3% Spandex, 280 GSM) · Velvet Burgundy · Silk Organza White · Power Mesh Nude",
         LINING: "Power Mesh Nude",
         TRIMS: "Victorian ruffled collar, satin neck tie, back lacing",
@@ -475,7 +526,7 @@ const COLLECTION_DATA = {
         image: "./MIS_TEXTILES/LOOK 11/LOOK11_Material_1_Herringbone_Brown_65Wool_30Poly_5Spandex_340GSM.jpg"
       },
       techPack: {
-        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_11_TechPack.pdf",
+        pdfUrl: "./PDF_FICHAS_TECNICAS/PDF_LOOK_11_TechPack.pdf",
         FABRIC: "Herringbone Brown (65% Wool 30% Polyester 5% Spandex, 340 GSM) · Boucle Tweed Gold Lurex (60% Polyester 30% Wool 10% Lurex, 280 GSM) · Velvet Black (90% Polyester 10% Spandex, 300 GSM)",
         LINING: "Satin lining",
         TRIMS: "Gold brooch hardware",
