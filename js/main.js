@@ -315,7 +315,7 @@ function buildTechSheet(look) {
    3. Ilustraciones y textiles
    ========================================================================== */
 
-/** Pinta las dos galerías: acuarelas (illustration) y muestras de tela (textile). */
+/** Pinta las dos galerías: acuarelas (illustration) y muestras de tela (textile/textiles). */
 function renderIllustrationsAndTextiles() {
   const illustrations = COLLECTION_DATA.looks.map((look) =>
     h('figure', {},
@@ -327,16 +327,38 @@ function renderIllustrationsAndTextiles() {
     )
   );
 
-  const textiles = COLLECTION_DATA.looks.map((look) =>
-    h('figure', {},
-      h('div', { class: 'frame' },
-        createImage(look.textile.image, `Fabric swatch: ${look.textile.name}`, look.textile.name)),
-      h('figcaption', { class: 'caption' },
-        h('strong', { text: look.textile.name }),
-        h('small', {}, look.textile.composition || h('span', { class: 'tbc', text: 'Composition to be confirmed' })),
-        h('small', { text: splitLookName(look.name).code }))
-    )
-  );
+  const textiles = [];
+
+  COLLECTION_DATA.looks.forEach((look) => {
+    // Si el look tiene múltiples textiles configurados en un arreglo
+    if (look.textiles && Array.isArray(look.textiles) && look.textiles.length > 0) {
+      look.textiles.forEach((tex) => {
+        textiles.push(
+          h('figure', {},
+            h('div', { class: 'frame' },
+              createImage(tex.image, `Fabric swatch: ${tex.name}`, tex.name)),
+            h('figcaption', { class: 'caption' },
+              h('strong', { text: tex.name }),
+              h('small', {}, tex.composition || h('span', { class: 'tbc', text: 'Composition to be confirmed' })),
+              h('small', { text: splitLookName(look.name).code }))
+          )
+        );
+      });
+    } 
+    // Fallback si solo tiene un objeto de textile
+    else if (look.textile) {
+      textiles.push(
+        h('figure', {},
+          h('div', { class: 'frame' },
+            createImage(look.textile.image, `Fabric swatch: ${look.textile.name}`, look.textile.name)),
+          h('figcaption', { class: 'caption' },
+            h('strong', { text: look.textile.name }),
+            h('small', {}, look.textile.composition || h('span', { class: 'tbc', text: 'Composition to be confirmed' })),
+            h('small', { text: splitLookName(look.name).code }))
+        )
+      );
+    }
+  });
 
   $('#illustrationGrid').replaceChildren(...illustrations);
   $('#textileGrid').replaceChildren(...textiles);
