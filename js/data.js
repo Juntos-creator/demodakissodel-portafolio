@@ -23,7 +23,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 1/LOOK1_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpeg",
         back: "./MIS_DISENOS/LOOK 1/LOOK1_Diseno_Espalda_Fondo_Blanco.jpeg",
-        detail: "./MIS_DISENOS/LOOK 1/LOOK 1 DISENO.jpeg"
+        detail: "./MIS_DISENOS/LOOK 1/LOOK 1 DISENO.jpeg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK1_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK1_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 1/LOOK 1 ACUARELA.jpeg",
       textile: {
@@ -32,6 +36,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_1_Stretch_Wool_Crepe_Beige_Main.jpeg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_01_TechPack.pdf",
         FABRIC: "Stretch Wool Crepe Beige (main) · Bonded Faux Suede Dark Brown (panels) · Silk Taffeta Organza Beige (rose) · Power Mesh Nude (lining)",
         LINING: "Power Mesh, nude",
         TRIMS: "Sculpted rose appliqué, silk taffeta organza, beige (shoulder)",
@@ -58,7 +63,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 2/LOOK2_Diseno_Espalda_Fondo_Blanco.jpg",
         back: "./MIS_DISENOS/LOOK 2/LOOK2_Diseno_Frente_Ghost_Mannequin_Fondo_Blanco.jpg",
-        detail: "./MIS_DISENOS/LOOK 2/LOOK 2 DISENO (1).jpg"
+        detail: "./MIS_DISENOS/LOOK 2/LOOK 2 DISENO (1).jpg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK2_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK2_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 2/LOOK 2 Acuarela.jpeg",
       textile: {
@@ -67,6 +76,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_1_Stretch_Velvet_Burgundy_90Poly_10Spandex_300GSM.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_02_TechPack.pdf",
         FABRIC: "Stretch Velvet Burgundy (90% Polyester 10% Spandex, 300 GSM) · Crystal Organza Olive Green (100% Polyester)",
         LINING: "Power Mesh, nude",
         TRIMS: "Crystal organza ruffles",
@@ -93,7 +103,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 3/LOOK3_Diseno_Frente_Ghost_Mannequin_Fondo_Blanco.jpg",
         back: "./MIS_DISENOS/LOOK 3/LOOK 3 ACUARELA.jpeg",
-        detail: "./MIS_DISENOS/LOOK 3/LOOK 3 LAPIZ.jpeg"
+        detail: "./MIS_DISENOS/LOOK 3/LOOK 3 LAPIZ.jpeg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK3_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK3_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 3/LOOK 3 ACUARELA.jpeg",
       textile: {
@@ -102,6 +116,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 3/LOOK3_Material_2_Crystal_Organza_Ivory_100Poly_25GSM.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_03_TechPack.pdf",
         FABRIC: "Ponte di Roma Taupe (92% Polyester 8% Spandex, 320 GSM) · Crystal Organza Ivory (100% Polyester, 25 GSM) · Power Mesh Nude (80% Nylon 20% Spandex, 200 GSM)",
         LINING: "Power Mesh Nude",
         TRIMS: "Gold chain hardware",
@@ -128,7 +143,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 4/LOOK4_Diseno_Espalda_Fondo_Blanco.jpg",
         back: "",
-        detail: "./MIS_DISENOS/LOOK 4/LOOK4_Diseno_Frente_Base_Rosa_Sin_Cartera_Fondo_Blanco.jpg"
+        detail: "./MIS_DISENOS/LOOK 4/LOOK4_Diseno_Frente_Base_Rosa_Sin_Cartera_Fondo_Blanco.jpg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK4_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK4_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 4/LOOK 4 ACUARELA.jpeg",
       textile: {
@@ -137,6 +156,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 4/LOOK4_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_04_TechPack.pdf",
         FABRIC: "Duchess Satin (97% Polyester 3% Spandex, 280 GSM) · Ponte di Roma Tartan (92% Polyester 8% Spandex, 320 GSM) · Crystal Organza (100% Polyester, 35 GSM) · Scuba Crepe (95% Polyester 5% Spandex, 250 GSM)",
         LINING: "Satin lining",
         TRIMS: "Train hooks and buttons",
@@ -163,7 +183,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 5/LOOK5_Diseno_Frente_Con_Plumas_Fondo_Blanco.jpg",
         back: "./MIS_DISENOS/LOOK 5/LOOK5_Diseno_Espalda_Fondo_Blanco.jpg",
-        detail: "./MIS_DISENOS/LOOK 5/LOOK5_Ghost_Mannequin_Frente_Fondo_Blanco.jpg"
+        detail: "./MIS_DISENOS/LOOK 5/LOOK5_Ghost_Mannequin_Frente_Fondo_Blanco.jpg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK5_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK5_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 5/LOOK 5 ACUARELA.jpeg",
       textile: {
@@ -172,6 +196,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 5/LOOK5_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_05_TechPack.pdf",
         FABRIC: "Duchess Satin (97% Polyester 3% Spandex, 280 GSM) · Wool Flannel Twill (65% Wool 30% Polyester 5% Spandex, 340 GSM)",
         LINING: "Satin lining",
         TRIMS: "Ostrich feather trim, burgundy and black (cuffs); gold chain button hardware",
@@ -198,7 +223,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 6/LOOK6_Diseno_Frente_Modelo_HD_Fondo_Blanco.jpg",
         back: "./MIS_DISENOS/LOOK 6/LOOK6_Diseno_Espalda_Fondo_Blanco.jpg",
-        detail: "./MIS_DISENOS/LOOK 6/LOOK6_Ghost_Mannequin_Frente_Fondo_Blanco.jpg"
+        detail: "./MIS_DISENOS/LOOK 6/LOOK6_Ghost_Mannequin_Frente_Fondo_Blanco.jpg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK6_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK6_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 6/LOOK 6 DIBUJO A COLOR.jpeg",
       textile: {
@@ -207,6 +236,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 6/LOOK6_Material_3_Duchess_Satin_White_97Poly_3Spandex_280GSM.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_06_TechPack.pdf",
         FABRIC: "Ponte di Roma Brown (92% Polyester 8% Spandex, 320 GSM) · Crushed Taffeta Beige (100% Polyester, 60 GSM) · Duchess Satin White (97% Polyester 3% Spandex, 280 GSM) · Gold Lame (85% Polyester 15% Metallic fibre, 120 GSM) · Burgundy Chiffon Georgette (100% Polyester, 40 GSM)",
         LINING: "Power Mesh",
         TRIMS: "Gold sash hardware",
@@ -233,7 +263,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 7/LOOK7_Ghost_Mannequin_Frente_Fondo_Blanco.jpg",
         back: "./MIS_DISENOS/LOOK 7/LOOK7_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg",
-        detail: "./MIS_DISENOS/LOOK 7/LOOK7_Diseno_Espalda_Fondo_Blanco.jpg"
+        detail: "./MIS_DISENOS/LOOK 7/LOOK7_Diseno_Espalda_Fondo_Blanco.jpg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK7_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK7_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 7/LOOK 7 ACUARELA.jpeg",
       textile: {
@@ -242,6 +276,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 7/LOOK7_Material_4_Guipure_Lace_Burgundy_100Poly.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_07_TechPack.pdf",
         FABRIC: "Ponte di Roma Mocha (92% Polyester 8% Spandex, 320 GSM) · Suede Fabric Beige · Raffia Straw Ivory · Guipure Lace Burgundy (100% Polyester)",
         LINING: "Power Mesh",
         TRIMS: "Guipure lace appliqué",
@@ -268,7 +303,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 8/LOOK8_Diseno_Espalda_Fondo_Blanco.jpg",
         back: "./MIS_DISENOS/LOOK 8/LOOK8_Ghost_Mannequin_Frente_Fondo_Blanco.jpg",
-        detail: "./MIS_DISENOS/LOOK 8/LOOK8_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg"
+        detail: "./MIS_DISENOS/LOOK 8/LOOK8_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK8_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK8_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 8/LOOK 8 ACUARELA.jpeg",
       textile: {
@@ -277,6 +316,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 8/LOOK8_Material_1_Cotton_Ottoman_Beige_100Cotton_200GSM.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_08_TechPack.pdf",
         FABRIC: "Cotton Ottoman Beige (100% Cotton, 200 GSM) · Cotton Twill Chino Beige (98% Cotton 2% Spandex, 280 GSM) · Faux Suede Brown (92% Polyester 8% Spandex, 300 GSM)",
         LINING: "Unlined / Cotton facing",
         TRIMS: "Burgundy toggle hardware",
@@ -303,7 +343,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 9/LOOK9_Diseno_Espalda_Fondo_Blanco.jpg",
         back: "./MIS_DISENOS/LOOK 9/LOOK9_Ghost_Mannequin_Frente_Fondo_Blanco.jpg",
-        detail: "./MIS_DISENOS/LOOK 9/LOOK9_Diseno_Frente_Modelo_HD_Fondo_Blanco.jpg"
+        detail: "./MIS_DISENOS/LOOK 9/LOOK9_Diseno_Frente_Modelo_HD_Fondo_Blanco.jpg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK9_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK9_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 9/LOOK 9 ACUARELA.jpeg",
       textile: {
@@ -312,6 +356,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 9/LOOK9_Material_1_Ponte_di_Roma_Mocha_92Poly_8Spandex_320GSM.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_09_TechPack.pdf",
         FABRIC: "Ponte di Roma Mocha (92% Polyester 8% Spandex, 320 GSM) · Linen Cotton Beige (100% Natural fibres) · Brocade Jacquard Purple Gold",
         LINING: "Satin lining",
         TRIMS: "Gold chain trim (epaulettes)",
@@ -338,7 +383,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 10/LOOK10_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg",
         back: "./MIS_DISENOS/LOOK 10/LOOK10_Ghost_Mannequin_DORSO_Fondo_Blanco.jpg",
-        detail: "./MIS_DISENOS/LOOK 10/LOOK10_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg"
+        detail: "./MIS_DISENOS/LOOK 10/LOOK10_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK10_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK10_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 10/LOOK 10 ACUARELA.jpeg",
       textile: {
@@ -347,6 +396,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 10/LOOK10_Material_1_Duchess_Satin_Burgundy_97Poly_3Spandex_28.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_10_TechPack.pdf",
         FABRIC: "Duchess Satin Burgundy (97% Polyester 3% Spandex, 280 GSM) · Velvet Burgundy · Silk Organza White · Power Mesh Nude",
         LINING: "Power Mesh Nude",
         TRIMS: "Victorian ruffled collar, satin neck tie, back lacing",
@@ -373,7 +423,11 @@ const COLLECTION_DATA = {
       images: {
         front: "./MIS_DISENOS/LOOK 11/LOOK11_Diseno_Espalda_Fondo_Blanco.jpg",
         back: "./MIS_DISENOS/LOOK 11/LOOK11_Ghost_Mannequin_Frente_Fondo_Blanco.jpg",
-        detail: "./MIS_DISENOS/LOOK 11/LOOK11_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg"
+        detail: "./MIS_DISENOS/LOOK 11/LOOK11_Diseno_Frente_Con_Rosa_Fondo_Blanco.jpg",
+        plus: {
+          front: "./MIS_DISENOS_PLUS/LOOK11_Plus_Frente.jpeg",
+          back: "./MIS_DISENOS_PLUS/LOOK11_Plus_Dorsal.jpeg"
+        }
       },
       illustration: "./MIS_DISENOS/LOOK 11/LOOK 11 ACUARELA.jpeg",
       textile: {
@@ -382,6 +436,7 @@ const COLLECTION_DATA = {
         image: "./MIS_DISENOS/LOOK 11/LOOK11_Material_1_Herringbone_Brown_65Wool_30Poly_5Spandex_340GSM.jpg"
       },
       techPack: {
+        pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_11_TechPack.pdf",
         FABRIC: "Herringbone Brown (65% Wool 30% Polyester 5% Spandex, 340 GSM) · Boucle Tweed Gold Lurex (60% Polyester 30% Wool 10% Lurex, 280 GSM) · Velvet Black (90% Polyester 10% Spandex, 300 GSM)",
         LINING: "Satin lining",
         TRIMS: "Gold brooch hardware",
