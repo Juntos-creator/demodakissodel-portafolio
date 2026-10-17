@@ -33,28 +33,28 @@ const COLLECTION_DATA = {
       textile: {
         name: "Stretch Wool Crepe Beige & Combination Fabrics",
         composition: "Main: 98% Wool, 2% Elastane | Panels: Bonded Faux Suede Dark Brown (100% Polyester) | Rose Appliqué: Silk Taffeta Organza Beige (100% Silk) | Lining: Power Mesh Nude (80% Nylon, 20% Spandex)",
-        image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_1_Stretch_Wool_Crepe_Beige_Main.jpeg"
+        image: "./MIS_TEXTILES/LOOK1_Material_1_Stretch_Wool_Crepe_Beige_Main.jpeg"
       },
       textiles: [
         {
           name: "Stretch Wool Crepe Beige (Main Fabric)",
           composition: "98% Wool, 2% Elastane",
-          image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_1_Stretch_Wool_Crepe_Beige_Main.jpeg"
+          image: "./MIS_TEXTILES/LOOK1_Material_1_Stretch_Wool_Crepe_Beige_Main.jpeg"
         },
         {
           name: "Bonded Faux Suede Dark Brown (Side Panels)",
           composition: "100% Polyester",
-          image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_2_Bonded_Faux_Suede_Dark_Brown_Side.jpeg"
+          image: "./MIS_TEXTILES/LOOK1_Material_2_Bonded_Faux_Suede_Dark_Brown_Side.jpeg"
         },
         {
           name: "Silk Taffeta Organza Beige (Rose Appliqué)",
           composition: "100% Silk",
-          image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_3_Silk_Taffeta_Organza_Beige_Rose.jpeg"
+          image: "./MIS_TEXTILES/LOOK1_Material_3_Silk_Taffeta_Organza_Beige_Rose.jpeg"
         },
         {
           name: "Power Mesh Nude (Lining)",
           composition: "80% Nylon, 20% Spandex",
-          image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_4_Power_Mesh_Nude_Lining_80Nylon_2.jpeg"
+          image: "./MIS_TEXTILES/LOOK1_Material_4_Power_Mesh_Nude_Lining_80Nylon_2.jpeg"
         }
       ],
       techPack: {
@@ -95,23 +95,23 @@ const COLLECTION_DATA = {
       textile: {
         name: "Stretch Velvet Burgundy & Crystal Organza Accent",
         composition: "Main: 90% Polyester, 10% Spandex (300 GSM) | Ruffles: Crystal Organza Olive Green (100% Polyester) | Lining: Power Mesh Nude (80% Nylon, 20% Spandex)",
-        image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_1_Stretch_Velvet_Burgundy_90Poly_10Spandex_300GSM.jpg"
+        image: "./MIS_TEXTILES/LOOK2_Material_1_Stretch_Velvet_Burgundy_90Poly_10Spandex_300GSM.jpg"
       },
       textiles: [
         {
           name: "Stretch Velvet Burgundy (Main Dress)",
           composition: "90% Polyester, 10% Spandex (300 GSM)",
-          image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_1_Stretch_Velvet_Burgundy_90Poly_10Spandex_300GSM.jpg"
+          image: "./MIS_TEXTILES/LOOK2_Material_1_Stretch_Velvet_Burgundy_90Poly_10Spandex_300GSM.jpg"
         },
         {
           name: "Crystal Organza Olive Green (Sleeve Ruffles)",
           composition: "100% Polyester",
-          image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_2_Crystal_Organza_Olive_Green_100Poly.jpg"
+          image: "./MIS_TEXTILES/LOOK2_Material_2_Crystal_Organza_Olive_Green_100Poly.jpg"
         },
         {
           name: "Power Mesh Nude (Internal Lining)",
           composition: "80% Nylon, 20% Spandex",
-          image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_3_Power_Mesh_Nude_80Nylon_20Spandex.jpg"
+          image: "./MIS_TEXTILES/LOOK2_Material_3_Power_Mesh_Nude_80Nylon_20Spandex.jpg"
         }
       ],
       techPack: {
@@ -152,7 +152,7 @@ const COLLECTION_DATA = {
       textile: {
         name: "Ponte di Roma Taupe",
         composition: "92% Polyester 8% Spandex, 320 GSM",
-        image: "./MIS_DISENOS/LOOK 3/LOOK3_Material_2_Crystal_Organza_Ivory_100Poly_25GSM.jpg"
+        image: "./MIS_TEXTILES/LOOK3_Material_2_Crystal_Organza_Ivory_100Poly_25GSM.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_03_TechPack.pdf",
@@ -192,7 +192,7 @@ const COLLECTION_DATA = {
       textile: {
         name: "Duchess Satin",
         composition: "97% Polyester 3% Spandex, 280 GSM",
-        image: "./MIS_DISENOS/LOOK 4/LOOK4_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
+        image: "./MIS_TEXTILES/LOOK4_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_04_TechPack.pdf",
@@ -232,7 +232,7 @@ const COLLECTION_DATA = {
       textile: {
         name: "Duchess Satin",
         composition: "97% Polyester 3% Spandex, 280 GSM",
-        image: "./MIS_DISENOS/LOOK 5/LOOK5_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
+        image: "./MIS_TEXTILES/LOOK5_Material_1_Duchess_Satin_97Poly_3Spandex_280GSM.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_05_TechPack.pdf",
@@ -272,7 +272,7 @@ const COLLECTION_DATA = {
       textile: {
         name: "Ponte di Roma Brown",
         composition: "92% Polyester 8% Spandex, 320 GSM",
-        image: "./MIS_DISENOS/LOOK 6/LOOK6_Material_3_Duchess_Satin_White_97Poly_3Spandex_280GSM.jpg"
+        image: "./MIS_TEXTILES/LOOK6_Material_3_Duchess_Satin_White_97Poly_3Spandex_280GSM.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_06_TechPack.pdf",
@@ -312,7 +312,7 @@ const COLLECTION_DATA = {
       textile: {
         name: "Ponte di Roma Mocha",
         composition: "92% Polyester 8% Spandex, 320 GSM",
-        image: "./MIS_DISENOS/LOOK 7/LOOK7_Material_4_Guipure_Lace_Burgundy_100Poly.jpg"
+        image: "./MIS_TEXTILES/LOOK7_Material_4_Guipure_Lace_Burgundy_100Poly.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_07_TechPack.pdf",
@@ -352,7 +352,7 @@ const COLLECTION_DATA = {
       textile: {
         name: "Cotton Ottoman Beige",
         composition: "100% Cotton, 200 GSM",
-        image: "./MIS_DISENOS/LOOK 8/LOOK8_Material_1_Cotton_Ottoman_Beige_100Cotton_200GSM.jpg"
+        image: "./MIS_TEXTILES/LOOK8_Material_1_Cotton_Ottoman_Beige_100Cotton_200GSM.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_08_TechPack.pdf",
@@ -392,7 +392,7 @@ const COLLECTION_DATA = {
       textile: {
         name: "Ponte di Roma Mocha",
         composition: "92% Polyester 8% Spandex, 320 GSM",
-        image: "./MIS_DISENOS/LOOK 9/LOOK9_Material_1_Ponte_di_Roma_Mocha_92Poly_8Spandex_320GSM.jpg"
+        image: "./MIS_TEXTILES/LOOK9_Material_1_Ponte_di_Roma_Mocha_92Poly_8Spandex_320GSM.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_09_TechPack.pdf",
@@ -432,7 +432,7 @@ const COLLECTION_DATA = {
       textile: {
         name: "Duchess Satin Burgundy",
         composition: "97% Polyester 3% Spandex, 280 GSM",
-        image: "./MIS_DISENOS/LOOK 10/LOOK10_Material_1_Duchess_Satin_Burgundy_97Poly_3Spandex_28.jpg"
+        image: "./MIS_TEXTILES/LOOK10_Material_1_Duchess_Satin_Burgundy_97Poly_3Spandex_28.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_10_TechPack.pdf",
@@ -472,7 +472,7 @@ const COLLECTION_DATA = {
       textile: {
         name: "Herringbone Brown",
         composition: "65% Wool 30% Polyester 5% Spandex, 340 GSM",
-        image: "./MIS_DISENOS/LOOK 11/LOOK11_Material_1_Herringbone_Brown_65Wool_30Poly_5Spandex_340GSM.jpg"
+        image: "./MIS_TEXTILES/LOOK11_Material_1_Herringbone_Brown_65Wool_30Poly_5Spandex_340GSM.jpg"
       },
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_11_TechPack.pdf",
