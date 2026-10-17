@@ -31,10 +31,32 @@ const COLLECTION_DATA = {
       },
       illustration: "./MIS_DISENOS/LOOK 1/LOOK 1 ACUARELA.jpeg",
       textile: {
-        name: "Stretch Wool Crepe Beige & Secondary Accent Fabrics",
+        name: "Stretch Wool Crepe Beige & Combination Fabrics",
         composition: "Main: 98% Wool, 2% Elastane | Panels: Bonded Faux Suede Dark Brown (100% Polyester) | Rose Appliqué: Silk Taffeta Organza Beige (100% Silk) | Lining: Power Mesh Nude (80% Nylon, 20% Spandex)",
         image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_1_Stretch_Wool_Crepe_Beige_Main.jpeg"
       },
+      textiles: [
+        {
+          name: "Stretch Wool Crepe Beige (Main Fabric)",
+          composition: "98% Wool, 2% Elastane",
+          image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_1_Stretch_Wool_Crepe_Beige_Main.jpeg"
+        },
+        {
+          name: "Bonded Faux Suede Dark Brown (Side Panels)",
+          composition: "100% Polyester",
+          image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_2_Bonded_Faux_Suede_Dark_Brown_Side.jpeg"
+        },
+        {
+          name: "Silk Taffeta Organza Beige (Rose Appliqué)",
+          composition: "100% Silk",
+          image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_3_Silk_Taffeta_Organza_Beige_Rose.jpeg"
+        },
+        {
+          name: "Power Mesh Nude (Lining)",
+          composition: "80% Nylon, 20% Spandex",
+          image: "./MIS_DISENOS/LOOK 1/LOOK1_Material_4_Power_Mesh_Nude_Lining_80Nylon_2.jpeg"
+        }
+      ],
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_01_TechPack.pdf",
         FABRIC: "Stretch Wool Crepe Beige (main fabric, 98% Wool / 2% Elastane) · Bonded Faux Suede Dark Brown (side panels, 100% Polyester) · Silk Taffeta Organza Beige (sculpted shoulder rose, 100% Silk) · Power Mesh Nude (internal lining, 80% Nylon / 20% Spandex)",
@@ -72,9 +94,26 @@ const COLLECTION_DATA = {
       illustration: "./MIS_DISENOS/LOOK 2/LOOK 2 Acuarela.jpeg",
       textile: {
         name: "Stretch Velvet Burgundy & Crystal Organza Accent",
-        composition: "Main: 90% Polyester, 10% Spandex (300 GSM) | Ruffles: Crystal Organza Olive Green (100% Polyester) | Lining: Power Mesh Nude",
+        composition: "Main: 90% Polyester, 10% Spandex (300 GSM) | Ruffles: Crystal Organza Olive Green (100% Polyester) | Lining: Power Mesh Nude (80% Nylon, 20% Spandex)",
         image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_1_Stretch_Velvet_Burgundy_90Poly_10Spandex_300GSM.jpg"
       },
+      textiles: [
+        {
+          name: "Stretch Velvet Burgundy (Main Dress)",
+          composition: "90% Polyester, 10% Spandex (300 GSM)",
+          image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_1_Stretch_Velvet_Burgundy_90Poly_10Spandex_300GSM.jpg"
+        },
+        {
+          name: "Crystal Organza Olive Green (Sleeve Ruffles)",
+          composition: "100% Polyester",
+          image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_2_Crystal_Organza_Olive_Green_100Poly.jpg"
+        },
+        {
+          name: "Power Mesh Nude (Internal Lining)",
+          composition: "80% Nylon, 20% Spandex",
+          image: "./MIS_DISENOS/LOOK 2/LOOK2_Material_3_Power_Mesh_Nude_80Nylon_20Spandex.jpg"
+        }
+      ],
       techPack: {
         pdfUrl: "./PDF_FICHAS_TECNICAS/LOOK_02_TechPack.pdf",
         FABRIC: "Stretch Velvet Burgundy (main dress, 90% Polyester / 10% Spandex, 300 GSM) · Crystal Organza Olive Green (statement sleeve ruffles, 100% Polyester)",
